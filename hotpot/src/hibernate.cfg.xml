@@ -1,0 +1,23 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+<session-factory name="foo">
+	<property name="show_sql">true</property>
+	<property name="hbm2ddl.auto">update</property>
+	<property name="myeclipse.connection.profile">orcl</property>
+	<property name="connection.url">
+		jdbc:oracle:thin:@PC-201506051653:1521:orcl
+	</property>
+	<property name="connection.username">scott</property>
+	<property name="connection.password">tiger</property>
+	<property name="connection.driver_class">
+		oracle.jdbc.OracleDriver
+	</property>
+	<property name="dialect">
+		org.hibernate.dialect.Oracle9Dialect
+	</property>
+	
+</session-factory>
+</hibernate-configuration>

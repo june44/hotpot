@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+  <package name="power" namespace="" extends="struts-default">
+  	<interceptors>
+  		<interceptor name="powerInter" class="cn.hotpot.inter.PowerInter"></interceptor>
+  		<interceptor-stack name="baseInter">
+  			<interceptor-ref name="powerInter"></interceptor-ref>
+  			<interceptor-ref name="defaultStack"></interceptor-ref>
+  		</interceptor-stack>
+  	</interceptors>
+  	<default-interceptor-ref name="baseInter"></default-interceptor-ref>
+  </package>
+
+</struts>

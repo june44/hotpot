@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="hotpot"
+  id="myeclipse.1444985822953"
+  context-root="/hotpot"
+  j2ee-spec="6.0"
+  archive="hotpot.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

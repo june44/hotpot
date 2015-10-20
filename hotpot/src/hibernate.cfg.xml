@@ -18,6 +18,34 @@
 	<property name="dialect">
 		org.hibernate.dialect.Oracle9Dialect
 	</property>
-	
+	<mapping resource="cn/hotpot/domain/ApplyBuy.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/ApplyBuyDetail.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/BillF.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/BillFD.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/BillType.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/BookTableRecord.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/CookAccount.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/Department.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/DiningTable.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/Dish.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/Employee.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/Goods.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/GoodsT.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/Material.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/OrderF.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/OrderFD.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/Position.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/Power.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/PurchaseF.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/PurchaseFD.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/PushMoney.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/Status.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/Storage.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/StorageChange.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/Supply.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/UnitConversion.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/Vip.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/VipLevel.hbm.xml" />
+
 </session-factory>
 </hibernate-configuration>

@@ -52,19 +52,10 @@ public class Context {
 	public static final Integer POSITION_MANAGER = 5;//经理
 	
 	
-	/*------bill_type订单类型表里的数据------*/
-
-	public static final Integer BILL_TYPE_RECHARGE = 1;//充值卡余额
+	//商品是否是加工商品
+	public static final Integer GOODS_PROCESS = 1;//加工品
 	
-	public static final Integer BILL_TYPE_CONSUME_MEMBER_TYPE = 2;//消费，续（或办）会籍费
-	
-	public static final Integer BILL_TYPE_CONSUME_COACH = 3;//消费，购买教练
-	
-	public static final Integer BILL_TYPE_CONSUME_RENT_CABINET = 4;//消费，租衣柜
-	
-	public static final Integer BILL_TYPE_RETURN_RENT = 5;//退租金
-	
-	public static final Integer BILL_TYPE_RETURN_BALANCE = 6;//退卡里余额
+	public static final Integer GOODS_NO_PROCESS = 0;//不是加工品
 	
 	
 }

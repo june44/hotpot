@@ -61,7 +61,7 @@ public class VipAction extends BaseAction {
 
    public String list()  {
 	   
-	  
+	  response.setCharacterEncoding("utf-8");
 	   String sql="{call Pager(?,?,?,?,?,?,?)}";
 	   PrintWriter out = null;
 	   

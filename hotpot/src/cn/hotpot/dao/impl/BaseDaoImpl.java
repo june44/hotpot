@@ -157,7 +157,6 @@ public abstract class BaseDaoImpl<E extends Serializable, PK extends Serializabl
 	
 	public void callProcedure(final String sql, final Object[] inParams, final Object[] outParams, final List<Object> resultOut){
 		this.getHibernateTemplate().execute(new HibernateCallback() {
-			
 			@Override
 			public Object doInHibernate(Session session) throws HibernateException,
 					SQLException {

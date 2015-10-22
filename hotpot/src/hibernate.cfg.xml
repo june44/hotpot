@@ -8,7 +8,7 @@
 	<property name="hbm2ddl.auto">update</property>
 	<property name="myeclipse.connection.profile">orcl</property>
 	<property name="connection.url">
-		jdbc:oracle:thin:@PC-201506051653:1521:orcl
+		jdbc:oracle:thin:@127.0.0.1:1521:orcl
 	</property>
 	<property name="connection.username">scott</property>
 	<property name="connection.password">tiger</property>
@@ -44,8 +44,8 @@
 	<mapping resource="cn/hotpot/domain/StorageChange.hbm.xml" />
 	<mapping resource="cn/hotpot/domain/Supply.hbm.xml" />
 	<mapping resource="cn/hotpot/domain/UnitConversion.hbm.xml" />
-	<mapping resource="cn/hotpot/domain/Vip.hbm.xml" />
 	<mapping resource="cn/hotpot/domain/VipLevel.hbm.xml" />
+	<mapping resource="cn/hotpot/domain/Vip.hbm.xml" />
 
 </session-factory>
 </hibernate-configuration>

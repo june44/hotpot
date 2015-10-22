@@ -25,7 +25,7 @@
         <property name="vipScore" type="java.lang.Integer">
             <column name="VIP_SCORE" precision="6" scale="0" />
         </property>
-        <set name="orderFs" inverse="true">
+        <set name="orderFs" lazy="false" >
             <key>
                 <column name="VIP_ID" precision="6" scale="0" />
             </key>

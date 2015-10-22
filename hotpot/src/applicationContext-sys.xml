@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  - Middle tier application context definition for the image database.
-  -->
-<beans  xmlns="http://www.springframework.org/schema/beans"
-	     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	     xmlns:aop="http://www.springframework.org/schema/aop"
-	     xmlns:tx="http://www.springframework.org/schema/tx"
-	     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+<!-- - Middle tier application context definition for the image database. -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd">
+
+
+	<bean id="vipDao" class="cn.hotpot.dao.impl.VipDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
 	
+	<bean id="vipBiz" class="cn.hotpot.biz.impl.VipBizImpl">
+		<property name="baseDao" ref="vipDao"></property>
+		<property name="vipdao" ref="vipDao" />
+	</bean>
+	
+	
+	
+	<bean id="vipLevelDao" class="cn.hotpot.dao.impl.VipLevelDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="vipLevelBiz" class="cn.hotpot.biz.impl.VipLevelBizImpl">
+		<property name="baseDao" ref="vipLevelDao"></property>
+		<property name="vip" ref="vipLevelDao" />
+	</bean>
+	<bean id="vipAction" class="cn.hotpot.action.VipAction" scope="prototype">
+		<property name="vipBiz" ref="vipBiz" />
+		<property name="vipLevelBiz" ref="vipLevelBiz" />
+	</bean>
 </beans>

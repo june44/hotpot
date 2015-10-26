@@ -18,7 +18,7 @@
 	</bean>
 	
 	
-	
+
 	<bean id="vipLevelDao" class="cn.hotpot.dao.impl.VipLevelDaoImpl">
 		<property name="sessionFactory" ref="sessionFactory" />
 	</bean>
@@ -30,5 +30,17 @@
 	<bean id="vipAction" class="cn.hotpot.action.VipAction" scope="prototype">
 		<property name="vipBiz" ref="vipBiz" />
 		<property name="vipLevelBiz" ref="vipLevelBiz" />
+	</bean>
+	
+	
+	<bean id="empDao" class="cn.hotpot.domain.Employee">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="empBiz" class="cn.hotpot.biz.impl.EmpBizImpl">
+		<property name="baseDao" ref="empDao"></property>
+		<property name="empDao" ref="empDao"/>
+	</bean>
+	<bean id="empAction" class="cn.hotpot.action.EmpAction" scope="prototype">
+		<property name="empBiz" ref="empBiz"></property>
 	</bean>
 </beans>

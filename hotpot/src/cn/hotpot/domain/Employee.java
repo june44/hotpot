@@ -3,6 +3,8 @@ package cn.hotpot.domain;
 import java.util.HashSet;
 import java.util.Set;
 
+
+
 /**
  * Employee entity. @author MyEclipse Persistence Tools
  */
@@ -20,6 +22,10 @@ public class Employee implements java.io.Serializable {
 	private String userName;
 	private String password;
 	private Integer salary;
+	private String true_Name;
+	private String addr;
+	private String phone;
+	private String sex;
 	private Set applyBuiesForApprover = new HashSet(0);
 	private Set dishsForCook = new HashSet(0);
 	private Set applyBuiesForApplicant = new HashSet(0);

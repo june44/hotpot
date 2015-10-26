@@ -45,7 +45,8 @@ public class Employee implements java.io.Serializable {
 	/** full constructor */
 	public Employee(Status statusByStaStatusId, Status statusByStatusId,
 			Position position, Department department, PushMoney pushMoney,
-			String userName, String password, Integer salary,
+			String userName, String password, Integer salary,String true_Name,
+			String addr, String phone,String sex ,
 			Set applyBuiesForApprover, Set dishsForCook,
 			Set applyBuiesForApplicant, Set purchaseFs, Set cookAccounts,
 			Set billFs, Set dishsForWaiter, Set storageChanges, Set orderFs) {
@@ -57,6 +58,10 @@ public class Employee implements java.io.Serializable {
 		this.userName = userName;
 		this.password = password;
 		this.salary = salary;
+		this.addr=addr;
+		this.sex=sex;
+		this.true_Name=true_Name;
+		this.phone=phone;
 		this.applyBuiesForApprover = applyBuiesForApprover;
 		this.dishsForCook = dishsForCook;
 		this.applyBuiesForApplicant = applyBuiesForApplicant;
@@ -69,6 +74,38 @@ public class Employee implements java.io.Serializable {
 	}
 
 	// Property accessors
+
+	public String getTrue_Name() {
+		return true_Name;
+	}
+
+	public void setTrue_Name(String trueName) {
+		true_Name = trueName;
+	}
+
+	public String getAddr() {
+		return addr;
+	}
+
+	public void setAddr(String addr) {
+		this.addr = addr;
+	}
+
+	public String getPhone() {
+		return phone;
+	}
+
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public String getSex() {
+		return sex;
+	}
+
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
 
 	public Integer getEmployeeId() {
 		return this.employeeId;
